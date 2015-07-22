@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+	name="OpenCV3"
+	id="org.libcinder.opencv"
+	author="Cinder Project"
+	license="BSD"
+	summary="OpenCV (v3) computer vision libraries"
+	git="git://github.com/cinder/Cinder-OpenCV.git"
+	version="3.0.0"
+	libraryUrl="http://opencv.org/"
+	>
+	<header>include/CinderOpenCV.h</header>
+	<includePath>include</includePath>
+	<platform compiler="vc2013">
+		<platform config="Debug">
+			<staticLibrary>lib/vc2013/x86/opencv_calib3d300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_core300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_features2d300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_flann300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_hal300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_imgproc300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_ml300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_objdetect300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_photo300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_shape300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_stitching300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_superres300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_ts300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_video300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_videostab300d.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/ippicvmt.lib</staticLibrary>
+		</platform>
+		<platform config="release">
+			<staticLibrary>lib/vc2013/x86/opencv_calib3d300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_core300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_features2d300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_flann300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_hal300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_imgproc300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_ml300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_objdetect300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_photo300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_shape300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_stitching300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_superres300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_ts300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_video300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/opencv_videostab300.lib</staticLibrary>
+			<staticLibrary>lib/vc2013/x86/ippicvmt.lib</staticLibrary>
+		</platform>
+	</platform>
+	<platform os="macosx">
+			<staticLibrary>lib/macosx/libopencv_calib3d.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_core.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_features2d.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_flann.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_hal.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_imgproc.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_ml.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_objdetect.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_photo.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_shape.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_stitching.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_superres.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_video.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_ts.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_videoio.a</staticLibrary>
+			<staticLibrary>lib/macosx/libopencv_videostab.a</staticLibrary>
+			<staticLibrary>lib/macosx/libippicv.a</staticLibrary>
+			<staticLibrary absolute="true">-lz</staticLibrary>
+			<framework sdk="true">OpenCL.framework</framework>		
+	</platform>
+	<platform os="ios" sdk="simulator">
+			<staticLibrary>lib/ios-sim/libopencv.a</staticLibrary>
+	</platform>
+	<platform os="ios" sdk="device">
+			<staticLibrary>lib/ios/libopencv.a</staticLibrary>
+	</platform>
+</block>
+<template>templates/Basic OpenCV/template.xml</template>
+</cinder>
