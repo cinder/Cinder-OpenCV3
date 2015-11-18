@@ -14,8 +14,6 @@
 
 #include "cinder/Cinder.h"
 
-#include "cinder/app/AppCocoaTouch.h"
-
 #include "cinder/gl/gl.h"
 
 #include "cinder/CinderMath.h"
