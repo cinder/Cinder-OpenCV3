@@ -242,6 +242,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -254,42 +255,16 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
 					"\"$(CINDER_PATH)/lib/libcinder-iphone_d.a\"",
 					"-lz",
-					../../../lib/ios/libopencv_calib3d.a,
-					../../../lib/ios/libopencv_contrib.a,
-					../../../lib/ios/libopencv_core.a,
-					../../../lib/ios/libopencv_features2d.a,
-					../../../lib/ios/libopencv_flann.a,
-					../../../lib/ios/libopencv_imgproc.a,
-					../../../lib/ios/libopencv_legacy.a,
-					../../../lib/ios/libopencv_ml.a,
-					../../../lib/ios/libopencv_nonfree.a,
-					../../../lib/ios/libopencv_objdetect.a,
-					../../../lib/ios/libopencv_photo.a,
-					../../../lib/ios/libopencv_stitching.a,
-					../../../lib/ios/libopencv_video.a,
-					../../../lib/ios/libopencv_videostab.a,
+					../../../lib/ios/libopencv.a,
 				);
 				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=*]" = (
 					"\"$(CINDER_PATH)/lib/libcinder-iphone-sim_d.a\"",
 					"-lz",
-					../../../lib/ios/libopencv_calib3d.a,
-					../../../lib/ios/libopencv_contrib.a,
-					../../../lib/ios/libopencv_core.a,
-					../../../lib/ios/libopencv_features2d.a,
-					../../../lib/ios/libopencv_flann.a,
-					../../../lib/ios/libopencv_imgproc.a,
-					../../../lib/ios/libopencv_legacy.a,
-					../../../lib/ios/libopencv_ml.a,
-					../../../lib/ios/libopencv_nonfree.a,
-					../../../lib/ios/libopencv_objdetect.a,
-					../../../lib/ios/libopencv_photo.a,
-					../../../lib/ios/libopencv_stitching.a,
-					../../../lib/ios/libopencv_video.a,
-					../../../lib/ios/libopencv_videostab.a,
+					"../../../lib/ios-sim/libopencv.a",
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,48 +281,23 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
 					"\"$(CINDER_PATH)/lib/libcinder-iphone.a\"",
 					"-lz",
-					../../../lib/ios/libopencv_calib3d.a,
-					../../../lib/ios/libopencv_contrib.a,
-					../../../lib/ios/libopencv_core.a,
-					../../../lib/ios/libopencv_features2d.a,
-					../../../lib/ios/libopencv_flann.a,
-					../../../lib/ios/libopencv_imgproc.a,
-					../../../lib/ios/libopencv_legacy.a,
-					../../../lib/ios/libopencv_ml.a,
-					../../../lib/ios/libopencv_nonfree.a,
-					../../../lib/ios/libopencv_objdetect.a,
-					../../../lib/ios/libopencv_photo.a,
-					../../../lib/ios/libopencv_stitching.a,
-					../../../lib/ios/libopencv_video.a,
-					../../../lib/ios/libopencv_videostab.a,
+					../../../lib/ios/libopencv.a,
 				);
 				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=*]" = (
 					"\"$(CINDER_PATH)/lib/libcinder-iphone-sim.a\"",
 					"-lz",
-					../../../lib/ios/libopencv_calib3d.a,
-					../../../lib/ios/libopencv_contrib.a,
-					../../../lib/ios/libopencv_core.a,
-					../../../lib/ios/libopencv_features2d.a,
-					../../../lib/ios/libopencv_flann.a,
-					../../../lib/ios/libopencv_imgproc.a,
-					../../../lib/ios/libopencv_legacy.a,
-					../../../lib/ios/libopencv_ml.a,
-					../../../lib/ios/libopencv_nonfree.a,
-					../../../lib/ios/libopencv_objdetect.a,
-					../../../lib/ios/libopencv_photo.a,
-					../../../lib/ios/libopencv_stitching.a,
-					../../../lib/ios/libopencv_video.a,
-					../../../lib/ios/libopencv_videostab.a,
+					"../../../lib/ios-sim/libopencv.a",
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
