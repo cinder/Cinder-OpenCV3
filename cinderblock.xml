@@ -12,42 +12,42 @@
 	>
 	<header>include/CinderOpenCV.h</header>
 	<includePath>include</includePath>
-	<platform compiler="vc2013">
-		<platform config="Debug">
-			<staticLibrary>lib/vc2013/x86/opencv_calib3d300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_core300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_features2d300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_flann300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_hal300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_imgproc300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_ml300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_objdetect300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_photo300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_shape300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_stitching300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_superres300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_ts300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_video300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_videostab300d.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/ippicvmt.lib</staticLibrary>
+	<platform os="msw">
+		<platform config="debug">
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_calib3d300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_core300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_features2d300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_flann300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_hal300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_imgproc300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_ml300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_objdetect300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_photo300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_shape300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_stitching300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_superres300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_ts300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_video300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_videostab300d.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/ippicvmt.lib</staticLibrary>
 		</platform>
 		<platform config="release">
-			<staticLibrary>lib/vc2013/x86/opencv_calib3d300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_core300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_features2d300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_flann300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_hal300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_imgproc300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_ml300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_objdetect300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_photo300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_shape300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_stitching300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_superres300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_ts300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_video300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/opencv_videostab300.lib</staticLibrary>
-			<staticLibrary>lib/vc2013/x86/ippicvmt.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_calib3d300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_core300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_features2d300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_flann300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_hal300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_imgproc300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_ml300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_objdetect300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_photo300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_shape300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_stitching300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_superres300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_ts300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_video300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/opencv_videostab300.lib</staticLibrary>
+			<staticLibrary>lib/msw/$(VisualStudioVersion)/$(PlatformTarget)/ippicvmt.lib</staticLibrary>
 		</platform>
 	</platform>
 	<platform os="macosx">
