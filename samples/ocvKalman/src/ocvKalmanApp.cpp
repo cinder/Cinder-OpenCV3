@@ -27,8 +27,7 @@ class ocvKalmanApp : public App {
         KalmanFilter( cv::Point initialPt )
         {
             mKF = cv::KalmanFilter( 4, 2, 0 );
-            float initData[] = {1,0,1,0,   0,1,0,1,  0,0,1,0,  0,0,0,1};
-            mKF.transitionMatrix = cv::Mat_<float>( 4, 4, initData );
+            mKF.transitionMatrix = ( cv::Mat_<float>(4, 4) << 1,0,1,0,   0,1,0,1,  0,0,1,0,  0,0,0,1 );
             mMeasurement = cv::Mat_<float>( 2, 1 );
             mMeasurement.setTo( cv::Scalar( 0 ) );
         
