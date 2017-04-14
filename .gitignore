@@ -16,3 +16,4 @@ build/
 *.sdf
 Debug/
 Release/
+*.VC.db
